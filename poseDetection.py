@@ -3,9 +3,8 @@ import numpy
 import tensorflow as tf
 import cv2
 
-# Load an official or custom model
-
-model = YOLO("yolov8l-pose.pt")  # Load an official Pose model
+#Loads YOLO Computer Vision model
+model = YOLO("yolov8l-pose.pt")
 results = model(
     source="/Users/jonathannguyen/Desktop/Screen Recording 2023-11-17 at 1.11.43 PM.mov",
     show=True,
@@ -13,6 +12,7 @@ results = model(
     save=False,
 )
 
+#List that will holds x and y coordniates of pose
 poslist = []
 # Perform tracking with the model
 coords = []
