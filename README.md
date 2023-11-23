@@ -1,5 +1,5 @@
 # About This Project
-This project utilizes AI and 3D simulations in order to help develop baseball players. It uses the latest technology in AI, Computer Vision, in order to analyze videos and creates 3d simulations based on these analyzations.
+This project utilizes AI and 3D simulations in order to help improve mechanics of baseball batters and pitchers. It uses the latest technology in AI, Computer Vision, in order to analyze videos and creates 3d simulations based on these analyzations.
 
 
 # Examples:
