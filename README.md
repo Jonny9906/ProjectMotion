@@ -7,4 +7,5 @@ This project utilizes AI and 3D simulations in order to help develop baseball pl
 https://github.com/Jonny9906/ProjectMotion/assets/108834152/41722ea1-9951-4add-b323-c3efa046df37
 
 ## 3D Simulation
-[Uploading Screen Recording 2023-10-16 at 6.23.45 PM (3).mov…](https://github.com/Jonny9906/ProjectMotion/assets/108834152/98f991bf-12ed-49f5-9de3-ff4e42e523e0)https://github.com/Jonny9906/ProjectMotion/assets/108834152/98f991bf-12ed-49f5-9de3-ff4e42e523e0
+https://github.com/Jonny9906/ProjectMotion/assets/108834152/28f94708-bd1d-4ec6-acc8-ed7d89161abb
+
