@@ -4,6 +4,7 @@ This project utilizes AI and 3-D simulations to dramatically improve mechanics o
 
 # Examples:
 ## Original Video
+### Zeke Morrison || Class of 2024 || RHP/INF/OF
 https://github.com/Jonny9906/ProjectMotion/assets/108834152/41722ea1-9951-4add-b323-c3efa046df37
 
 ## 3D Simulation
