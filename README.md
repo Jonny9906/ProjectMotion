@@ -1,5 +1,5 @@
 # About This Project
-This project utilizes AI and 3-D simulations to dramatically improve mechanics of baseball batters and pitchers. It uses computer vision, a form of AI, in order to generate accurate 3-D simulations of actual batter position that can be evaluated by a coach for feedback.
+This project utilizes AI and 3-D simulations to dramatically improve mechanics of baseball batters and pitchers. It uses computer vision, a form of AI, in order to generate accurate 3-D simulations of actual batter position that can be evaluated by a coach for feedback. This allows for people to use high quality training tools for a fraction of the price of many of the main stream options.
 
 
 # Examples:
