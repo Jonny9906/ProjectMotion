@@ -4,7 +4,7 @@ This project utilizes AI and 3-D simulations to dramatically improve mechanics o
 
 # Examples:
 ## Original Video
-### Kanghee Cho || Division I prospect || OF/RHP
+### Kanghee Cho || Division I Recruit || OF/RHP
 https://github.com/Jonny9906/ProjectMotion/assets/108834152/53b74c82-afda-4694-9029-10c4e0997b19
 
 ## 3-D Simulation
