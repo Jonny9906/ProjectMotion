@@ -1,28 +1,62 @@
-# About This Project
-This project utilizes AI and 3-D simulations to dramatically improve the mechanics of baseball batters and pitchers. It uses computer vision, a form of AI, in order to generate accurate 3-D simulations of actual batter position that can be evaluated by a coach for feedback. This allows athletes to use high quality training tools at a fraction of the price of many of the main stream options.
+YOLOv8-pose re-implementation using PyTorch
 
+### Installation
 
+```
+conda create -n YOLO python=3.8
+conda activate YOLO
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch-lts
+pip install opencv-python==4.5.5.64
+pip install PyYAML
+pip install tqdm
+```
 
-# Examples:
-## Original Video
-### Kanghee Cho || Brown Commit || OF/RHP
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/53b74c82-afda-4694-9029-10c4e0997b19
+### Train
 
-## 3-D Simulation
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/d14804d2-452f-477b-98df-3b1191127299
+* Configure your pose dataset path in `main.py` for training
+* Run `bash main.sh $ --train` for training, `$` is number of GPUs
 
+### Test
 
+* Configure your dataset path in `main.py` for testing
+* Run `python main.py --test` for testing
 
-## Original Video
-### Zeke Morrison || RHP/INF/OF
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/41722ea1-9951-4add-b323-c3efa046df37
+### Results
 
-## 3-D Simulation
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/28f94708-bd1d-4ec6-acc8-ed7d89161abb
+|  Version   | Epochs | Pose mAP |                                                                                       Download |
+|:----------:|:------:|---------:|-----------------------------------------------------------------------------------------------:|
+| v8_n_pose  |  1000  |     50.2 |                                                                     [model](./weights/best.pt) |
+| v8_n_pose* |  1000  |     50.5 | [model](https://github.com/jahongir7174/YOLOv8-pt/releases/download/v0.0.1-alpha/v8_n_pose.pt) |
+| v8_s_pose* |  1000  |     59.5 | [model](https://github.com/jahongir7174/YOLOv8-pt/releases/download/v0.0.1-alpha/v8_s_pose.pt) |
+| v8_m_pose* |  1000  |     63.8 | [model](https://github.com/jahongir7174/YOLOv8-pt/releases/download/v0.0.1-alpha/v8_m_pose.pt) |
+| v8_l_pose* |  1000  |     67.4 | [model](https://github.com/jahongir7174/YOLOv8-pt/releases/download/v0.0.1-alpha/v8_l_pose.pt) |
+| v8_x_pose* |  1000  |     69.4 | [model](https://github.com/jahongir7174/YOLOv8-pt/releases/download/v0.0.1-alpha/v8_x_pose.pt) |
 
-## Original Video
-### Jonathan Nguyen || INF/UTIL
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/60b13155-3624-4098-83e6-7cfc255fb153
+* `*` means that weights are ported from original repo, see reference
 
-## 3-D Simulation
-https://github.com/Jonny9906/ProjectMotion/assets/108834152/e320bf35-3fea-49ba-8386-4ea3539542ad
+### Dataset structure
+
+    ├── COCO 
+        ├── images
+            ├── train2017
+                ├── 1111.jpg
+                ├── 2222.jpg
+            ├── val2017
+                ├── 1111.jpg
+                ├── 2222.jpg
+        ├── labels
+            ├── train2017
+                ├── 1111.txt
+                ├── 2222.txt
+            ├── val2017
+                ├── 1111.txt
+                ├── 2222.txt
+
+### Results
+
+![Alt Text](./demo/demo.gif)
+
+#### Reference
+
+* https://github.com/ultralytics/yolov5
+* https://github.com/ultralytics/ultralytics
